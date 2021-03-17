@@ -1,0 +1,5 @@
+1 - Alface
+2 - Agrião
+3 - Rúcula
+4 - Chicória
+5 - Almeirão
