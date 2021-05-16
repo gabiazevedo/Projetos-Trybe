@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(253, 251, 251);
+  position: absolute;
+  font-family: satisfy, sans-serif;
+  letter-spacing: 2px;
+  color: rgb(28, 28, 28);
+  font-size: 17px;
+  line-height: 25px;
+  z-index: 1;
+  top: 100px;
+  left: 30px;
+}
+
+#cabecalho {
+  background-color: lightseagreen;
+  position: fixed;
+  height: 90px;
+  top: 0;
+  left: 9px;
+  width: 100%;
+  border-bottom: 5px solid teal;
+}
+
+#minha_foto {
+  border-radius: 50px;
+  border: 3px solid forestgreen;
+}
+
+.table {
+  float: right;
+  padding-right: 270px;
+  padding-top: 150px;
+  height: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#titulo {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 10px;
+}
+
+div {
+  display: inline-block;
+}
+
+.titulo-lista-ol {
+  position: absolute;
+  margin-left: 20px;
+}
+
+.titulo-lista-ul {
+  margin-left: 270px;
+}
+
+#licoes_aprendidas {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+#licoes_a_aprender {
+  display: inline-block;
+  margin-left: 250px;
+  margin-bottom: 40px;
+}
+
+#rodape {
+  background-color: lightseagreen;
+  padding-left: 100px;
+  padding-top: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#link_externo {
+  padding-left: 30px;
+}
+
+.lado-esquerdo {
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+
+.lado-direito {
+  width: 30%;
+  display: inline-block;
+  margin-left: 130px;
+  text-align: center;
+}
