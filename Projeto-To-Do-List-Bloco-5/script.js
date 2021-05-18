@@ -127,3 +127,54 @@ function salvarTarefas() {
   taskList.innerHTML = localStorage.getItem('listItems');
 }
 salvarTarefas();
+
+//Cria botões pra cima e pra baixo
+
+const moveUp = document.createElement('button');
+moveUp.innerText = 'Pra Cima';
+moveUp.classList = 'mover-cima';
+divInputs2.appendChild(moveUp);
+
+const moveDown = document.createElement('button');
+moveDown.innerText = 'Pra Baixo';
+moveDown.classList = 'mover-baixo';
+divInputs2.appendChild(moveDown);
+
+// Funções de evento dos botões mover pra cima e pra baixo 
+
+moveUp.addEventListener('click', () => {
+const liMoveUp = document.querySelectorAll('li');
+for (let index = 0; index < liMoveUp.length; index += 1) {
+  const listMoveUp = liMoveUp[index];
+  if (listMoveUp.classList.contains('selected') && index > 0) {
+    orderList.removeChild(listMoveUp);
+    orderList.insertBefore(listMoveUp, orderList.children[index - 1]);
+  }
+}
+});
+
+moveDown.addEventListener('click', () => {
+const liMoveDown = document.querySelectorAll('li');
+for (let index = 0; index < liMoveDown.length; index += 1) {
+  const listMoveDown = liMoveDown[index];
+  if (listMoveDown.classList.contains('selected') && index < (liMoveDown.length - 1)) {
+    orderList.removeChild(listMoveDown);
+    orderList.insertBefore(listMoveDown, orderList.children[index + 1]);
+  }
+}
+});
+
+// Cria botão selecionados 
+
+const removeSelected = document.createElement('button');
+removeSelected.innerText = 'Remover Selecionados';
+removeSelected.classList = 'remover-selecionado';
+divInputs2.appendChild(removeSelected);
+
+removeSelected.addEventListener('click', () => {
+  const selectedColor = document.querySelectorAll('.selected');
+  for (let index = 0; index < selectedColor.length; index += 1) {
+  const colors = selectedColor[index];
+  orderList.removeChild(colors);
+  }
+  }); 
