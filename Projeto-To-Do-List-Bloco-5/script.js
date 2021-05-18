@@ -4,13 +4,6 @@ const divMain = document.createElement('div');
 divMain.id = 'div-main';
 document.body.appendChild(divMain);
 
-// Adiciona img;
-
-const flor = document.createElement('img');
-flor.id = 'cerejeira';
-flor.src = 'cerejeira.jpg';
-divMain.appendChild(flor);
-
 // Cria cabeçalho;
 
 const header = document.createElement('header');
@@ -60,6 +53,8 @@ createTask.addEventListener('click', () => {
   orderList.appendChild(listItem);
 });
 
+// Cria função de click para adicionar ou remover tarefa tarefa 
+
 function click() {
   orderList.addEventListener('click', (event) => {
     const selectedItem = document.querySelector('.selected');
@@ -99,6 +94,8 @@ function deleteAll() {
 }
 deleteAll();
 
+// Cria botão e função de evento para remover tarefas finalizadas
+
 const removeFinalizados = document.createElement('button');
 removeFinalizados.id = 'remover-finalizados';
 removeFinalizados.innerText = 'Limpar Completos';
@@ -113,6 +110,8 @@ function deleteCompleted() {
   });
 }
 deleteCompleted();
+
+// Cria botão e funçã de evento salvar tarefas
 
 const saveTasks = document.createElement('button');
 saveTasks.id = 'salvar-tarefas';
@@ -164,7 +163,7 @@ for (let index = 0; index < liMoveDown.length; index += 1) {
 }
 });
 
-// Cria botão selecionados 
+// Cria botão 'remove selecionados'
 
 const removeSelected = document.createElement('button');
 removeSelected.innerText = 'Remover Selecionados';

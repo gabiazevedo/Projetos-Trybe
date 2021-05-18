@@ -1,14 +1,16 @@
 #body {
-  background-color: rgb(139 , 131 , 134);
+  background-image: url( azul.jpg );
 }
 
 #div-main {
-  background-color: peachpuff;
+  background-color: #68838B;
   height: 400px;
-  margin-left: 50px;
+  margin-left: 270px;
   border-radius: 30px;
   margin-right: 100px;
   margin-top: 100px;
+  width: 70%;
+  
 }
 
 #cabecalho {
@@ -73,12 +75,4 @@
   border-radius: 20px;
   margin-left: 30px;
   font-family: Old Standard TT, sans-serif;
-}
-
-#cerejeira {
-  width: 400px;
-  float: right;
-  border-radius: 50px;
-  margin-top: 90px;
-  margin-right: 60px;
 }
