@@ -7,16 +7,16 @@ document.body.appendChild(divMain);
 // Cria cabeçalho;
 
 const header = document.createElement('header');
-header.innerText = 'Minha Lista de Tarefas';
+header.innerText = 'Minha Lista de Tarefas 📝';
 header.id = 'cabecalho';
-header.style = 'font-family: Old Standard TT';
+header.style = 'font-family: Habibi, serif';
 divMain.appendChild(header);
 
 // Cria título;
 
 const paragraph = document.createElement('p');
 paragraph.id = 'funcionamento';
-paragraph.innerText = 'Clique duas vezes em um item para marcá-lo como completo';
+paragraph.innerText = '✅ Clique duas vezes em um item para marcá-lo como completo';
 divMain.appendChild(paragraph);
 
 // Cria div para abrigar o input de informações;
@@ -47,7 +47,7 @@ const createTask = document.getElementById('criar-tarefa');
 
 createTask.addEventListener('click', () => {
   const listItem = document.createElement('li');
-  listItem.style = 'font-family: Old Standard TT';
+  listItem.style = 'font-family: Habibi, serif';
   listItem.innerText = input.value;
   input.value = '';
   orderList.appendChild(listItem);

@@ -20,7 +20,7 @@
 }
 
 #funcionamento {
-  font-family: Old Standard TT, sans-serif;
+  font-family: 'Habibi', serif;;
   margin-left: 20px;
   font-size: 20px;
 }
@@ -32,22 +32,26 @@
 
 #texto-tarefa {
   width: 400px;
-  border-radius: 20px;
-  height: 20px;
+  border-radius: 15px;
+  height: 25px;
+  border: solid white;
 }
 
 #criar-tarefa {
   margin-left: 20px;
   border-radius: 10px;
   width: 130px;
-  font-family: Old Standard TT, sans-serif;
+  height: 25px;
+  font-family: 'Habibi', serif;
   font-size: medium;
+  border: solid 1px #ff8c53;
+  background-color: #f2bb8b;
 }
 
 .selected {
-  background-color: gray;
+  background-color: #EEC591;
   margin-right: 200px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .completed {
@@ -59,20 +63,86 @@
 }
 
 #apaga-tudo {
-  font-family: Old Standard TT, sans-serif;
+  font-family: 'Habibi', serif;
+  font-weight: bold;
+  font-size: 15px;
+  height: 25px;
   border-radius: 10px;
   margin-left: 20px;
   margin-top: 30px;
+  border: solid 1px #8DB6CD;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
 }
 
 #remover-finalizados {
   border-radius: 10px;
   margin-left: 30px;
-  font-family: Old Standard TT, sans-serif;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
 }
 
 #salvar-tarefas {
-  border-radius: 20px;
+  border-radius: 10px;
   margin-left: 30px;
-  font-family: Old Standard TT, sans-serif;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
+}
+
+.mover-cima {
+  border-radius: 10px;
+  margin-left: 30px;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
+}
+
+.mover-baixo {
+  border-radius: 10px;
+  margin-left: 30px;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
+}
+
+.remover-selecionado {
+  border-radius: 10px;
+  margin-left: 30px;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
 }
