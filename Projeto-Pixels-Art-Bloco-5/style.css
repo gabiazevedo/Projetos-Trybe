@@ -1,17 +1,20 @@
 #title {
   font-size: 50px;
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 30px;
+  color: white;
 }
 .color {
   padding: 50px;
   display: inline-block;
-  border: solid black 1px;
+  border: solid white 2px;
   margin: 5px;
   border-radius: 10px;
 }
 
 body {
   text-align: center;
-  background-color: #ffdfa3;
+  background-color: black;
 }
 
 #pixel-board {
@@ -31,21 +34,32 @@ body {
   justify-content: center;
 }
 
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
 #clear-board {
   margin-top: 20px;
   border-radius: 5px;
-  background-color: cornflowerblue;
+  background-color: black;
+  color: white;
+  font-family:'Press Start 2P', cursive;;
   border: none;
   height: 30px;
-  width: 60px;
 }
 
 #generate-board {
   border-radius: 5px;
-  background-color:cornflowerblue;
+  font-family: 'Press Start 2P', cursive;
+  background-color: black;
+  color: white;
   border: none;
   height: 30px;
-  width: 50px;
+  width: 60px;
 }
 
 #board-size {
@@ -53,10 +67,15 @@ width: 60px;
 text-align: center;
 border-radius: 5px;
 border: none;
+height: 28px;
 }
 
 .title2 {
-  font-family: 'New Tegomin';
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-top: 50px;
 }
 
 #yoshi {

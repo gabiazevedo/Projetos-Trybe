@@ -1,6 +1,6 @@
 // Criação do Título
 const title = document.getElementById('title');
-title.style = 'font-family: New Tegomin';
+title.style = 'font-family: Press Start 2P, cursive';
 
 // Criando paleta de cores
 
@@ -36,6 +36,7 @@ randomColor();
 // Criando seção para abrigar botões
 
 const sectionButtons = document.createElement('section');
+sectionButtons.id = 'buttons';
 document.body.appendChild(sectionButtons);
 
 // Criando o botão 'limpar'
@@ -57,7 +58,7 @@ sectionButtons.appendChild(input);
 // Criando o botão 'VQV'
 
 const button2 = document.createElement('button');
-button2.innerText = 'VQV';
+button2.innerText = '#VQV';
 button2.id = 'generate-board';
 sectionButtons.appendChild(button2);
 
