@@ -146,30 +146,6 @@ title2.classList = 'title2';
 title2.innerText = 'Escolha seu desenho favorito para pintar!';
 sectionPictures.appendChild(title2);
 
-// // Cria divs para abrigar títulos imagens
-
-// const divTitles = document.createElement('div');
-// divTitles.classList('titles');
-// sectionPictures.appendChild(divTitles);
-
-// // Cria div títulos
-
-// const yoshiTitle = document.createElement('div');
-// yoshiTitle.innerText = 'O melhor amigo do Mario: Yoshi';
-// divTitles.appendChild(yoshiTitle);
-
-// const flowerTitle = document.createElement('div');
-// flowerTitle.innerText = 'A flor que dá super poderes pro Mario';
-// divTitles.appendChild(flowerTitle);
-
-// const grootTitle = document.createElement('div');
-// grootTitle.innerText = 'I am groot...';
-// divTitles.appendChild(grootTitle);
-
-// const sonicTitle = document.createElement('div');
-// sonicTitle.innerText = 'Sonic';
-// divTitles.appendChild(sonicTitle);
-
 // Cria div para abrigar imagens
 
 const divPictures = document.createElement('div');
