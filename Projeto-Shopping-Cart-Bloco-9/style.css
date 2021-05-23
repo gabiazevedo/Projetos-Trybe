@@ -1,3 +1,7 @@
+body {
+  background-color: #beceff;
+}
+
 .top-bar {
   align-items: center;
   display: flex;
@@ -28,6 +32,9 @@
   flex-basis: 70%;
   flex-wrap: wrap;
   justify-content: center;
+  font-weight: bold;
+  font-family: 'KoHo', sans-serif;
+  margin-top: 10px;
 }
 
 .item {
@@ -56,21 +63,56 @@
 }
 
 .item .item__add {
-  background-color: green;
+  background-color: #4a568a;
   border: 0;
   cursor: pointer;
   margin: 0;
   padding: 5px;
+  font-family: 'KoHo', sans-serif;
+  font-weight: bold;
 }
 
 .cart {
   display: flex;
   flex-basis: 30%;
   flex-flow: column wrap;
+  border: solid 1px navy;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.cart__items {
+  padding-left: 28px;
+}
+
+.cart__item {
+  font-family: 'KoHo', sans-serif;
+  margin-bottom: 10px;
 }
 
 .cart .cart__title {
   flex-basis: 1;
   font-size: 16pt;
   text-align: center;
+  font-family: 'KoHo', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.empty-cart {
+  font-family: 'KoHo', sans-serif;
+  width: 300px;
+  margin-left: 65px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  background-color: #808fe1;
+}
+
+#price {
+  font-family: 'KoHo', sans-serif;
+  font-weight: bold;
+  margin-left: 10px; 
 }
