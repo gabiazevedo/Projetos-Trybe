@@ -76,7 +76,6 @@ body {
   display: flex;
   flex-basis: 30%;
   flex-flow: column wrap;
-  border: solid 1px navy;
   border-radius: 5px;
   margin-top: 15px;
 }
