@@ -1,0 +1,57 @@
+/* #root {
+  background-color: black;
+} */
+
+.div-main {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 42, 19);
+  color: white;
+  height: 100px;
+}
+/* 
+.loading {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  margin-top: 300px;
+} */
+
+.movie-details {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.movie-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#movie-card {
+  margin-bottom: 60px;
+  border: solid 1px grey;
+  box-shadow: 0 0 0.5em gold;
+  background-color: black;
+  color: white;
+}
+
+#movie-card:hover {
+  border: 10px solid black;
+            transform: scale(1.1); 
+            box-shadow: 0 5px 10px gold;
+}
+
+.details {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 60%;
+}

@@ -1,0 +1,148 @@
+#body {
+  background-image: url( azul.jpg );
+}
+
+#div-main {
+  background-color: #68838B;
+  height: 400px;
+  margin-left: 270px;
+  border-radius: 30px;
+  margin-right: 100px;
+  margin-top: 100px;
+  width: 70%;
+  
+}
+
+#cabecalho {
+  margin-left: 40px;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+#funcionamento {
+  font-family: 'Habibi', serif;;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+#inputs {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+#texto-tarefa {
+  width: 400px;
+  border-radius: 15px;
+  height: 25px;
+  border: solid white;
+}
+
+#criar-tarefa {
+  margin-left: 20px;
+  border-radius: 10px;
+  width: 130px;
+  height: 25px;
+  font-family: 'Habibi', serif;
+  font-size: medium;
+  border: solid 1px #ff8c53;
+  background-color: #f2bb8b;
+}
+
+.selected {
+  background-color: #EEC591;
+  margin-right: 200px;
+  border-radius: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+#other-buttons {
+  display: inline-block;
+}
+
+#apaga-tudo {
+  font-family: 'Habibi', serif;
+  font-weight: bold;
+  font-size: 15px;
+  height: 25px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border: solid 1px #8DB6CD;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
+}
+
+#remover-finalizados {
+  border-radius: 10px;
+  margin-left: 30px;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
+}
+
+#salvar-tarefas {
+  border-radius: 10px;
+  margin-left: 30px;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
+}
+
+.mover-cima {
+  border-radius: 10px;
+  margin-left: 30px;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
+}
+
+.mover-baixo {
+  border-radius: 10px;
+  margin-left: 30px;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
+}
+
+.remover-selecionado {
+  border-radius: 10px;
+  margin-left: 30px;
+  font-family: 'Habibi', serif;
+  height: 25px;
+  border: solid 1px #8DB6CD;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #004665;
+  color: white;
+}

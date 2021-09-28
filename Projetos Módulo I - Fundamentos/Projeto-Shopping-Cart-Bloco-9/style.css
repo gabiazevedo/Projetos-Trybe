@@ -1,0 +1,117 @@
+body {
+  background-color: #beceff;
+}
+
+.top-bar {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.top-bar .input-name-group {
+  align-items: flex-start;
+  display: flex;
+}
+
+.top-bar .input-terms-group {
+  align-items: flex-start;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.items {
+  display: flex;
+  flex-basis: 70%;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'KoHo', sans-serif;
+  margin-top: 10px;
+}
+
+.item {
+  border: 2px solid blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 5px;
+  width: 200px;
+}
+
+.item .item__sku {
+  display: none;
+}
+
+.item .item__title {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.item .item__image {
+  width: 100%;
+}
+
+.item .item__add {
+  background-color: #4a568a;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  font-family: 'KoHo', sans-serif;
+  font-weight: bold;
+}
+
+.cart {
+  display: flex;
+  flex-basis: 30%;
+  flex-flow: column wrap;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.cart__items {
+  padding-left: 28px;
+}
+
+.cart__item {
+  font-family: 'KoHo', sans-serif;
+  margin-bottom: 10px;
+}
+
+.cart .cart__title {
+  flex-basis: 1;
+  font-size: 16pt;
+  text-align: center;
+  font-family: 'KoHo', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.empty-cart {
+  font-family: 'KoHo', sans-serif;
+  width: 300px;
+  margin-left: 65px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  background-color: #808fe1;
+}
+
+#price {
+  font-family: 'KoHo', sans-serif;
+  font-weight: bold;
+  margin-left: 10px; 
+}

@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #191421;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+span {
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  background-color: #284b63;
+  justify-content: space-around;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.trybewarts-header-logo {
+  width: 50px;
+}
+
+.trybewarts-login {
+  display: flex;
+  margin: 10px 30px;
+  align-items: center;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#trybewarts-header-title {
+  font-family: 'New Rocker', cursive;
+  padding-top: 10px;
+  color: black;
+}
+
+#trybewarts-forms-logo {
+  margin-top: 60px;
+}
+
+#login {
+  border-radius: 10px;
+  margin: 5px;
+  height: 25px;
+  border: solid #213d49;
+  font-family: 'New Rocker', cursive;
+  font-size: 15px;
+}
+
+#senha {
+  border-radius: 10px;
+  margin: 5px;
+  height: 25px;
+  border: solid #213d49;
+  font-family: 'New Rocker', cursive;
+  font-size: 15px;
+}
+
+#login-button {
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 10px;
+  margin: 5px;
+  border: solid #213d49;
+  width: 70px;
+  background-color: #bb7114;
+  color: white;
+  font-family: 'New Rocker', cursive;
+  font-size: 17px;
+}
+
+#nome-e-sobrenome {
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-direction: row;
+  font-family: 'New Rocker', cursive;
+  color: #bb7114;
+}
+
+#e-mail-e-casa {
+  display: flex;
+  margin-top: 20px;
+  width: 620px;
+}
+
+#input-radio {
+  display: flex;
+  width: 80px;
+  height: 90px;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  margin-top: 15px;
+}
+
+#label-family {
+  width: 80px;
+}
+
+#textarea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  flex-grow: 1;
+  width: 625px;
+  border: solid 2px #bb7114;
+  background-color: #d1d4b0;
+}
+
+#checkboxs {
+  display: flex;
+  width: 400px;
+  height: 150px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#techs {
+  display: flex;
+  width: 250px;
+  height: 90px;
+  flex-flow: row wrap;
+  flex-grow: 1;
+}
+
+#input-name {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  border-radius: 5px;
+  width: 290px;
+  font-family: 'New Rocker', cursive;
+  background-color: #d1d4b0;
+  border: none;
+}
+
+#input-lastname {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  border-radius: 5px;
+  width: 290px;
+  font-family: 'New Rocker', cursive;
+  background-color: #d1d4b0;
+  border: none;
+}
+
+#input-email {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  border-radius: 5px;
+  width: 290px;
+  font-family: 'New Rocker', cursive;
+  border: none;
+  background-color: #d1d4b0;
+}
+
+#first {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 65px;
+  width: 70%;
+}
+
+#casa {
+  font-family: 'New Rocker', cursive;
+  color: #bb7114;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#house {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 5px;
+  font-family: 'New Rocker', cursive;
+  color: #bb7114;
+  font-size: 15px;
+  width: 245px;
+  border: none;
+}
+
+#input-avaliador {
+  font-family: 'New Rocker', cursive;
+  color: #bb7114;
+  display: flex;
+
+}
+
+#inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}
+
+#label-rate {
+  margin-right: 20px;
+}
+
+#label-house {
+  align-items: center;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: #0c323a;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  width: 100%;
+  font-size: 15pt;
+  font-family: 'New Rocker', cursive;
+  position: fixed;
+}
+
+#counter {
+  margin-left: 600px;
+}
+
+#input-form {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 25px;
+}
+
+#agreement {
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#label-infos {
+  flex-direction: row;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  color: #bb7114;
+  font-family: 'New Rocker', cursive;
+}
+
+#submit-btn {
+  flex-basis: 93%;
+  font-size: 15px;
+  border-radius: 15px;
+  text-align: center;
+  height: 30px;
+  border: none;
+  background-color: #284741;
+  color: white;
+  font-family: 'New Rocker', cursive;
+}
+
+#evaluation-form {
+  margin-top: 35px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  justify-content: center;
+  font-family: 'New Rocker', cursive;
+  color: #bb7114;
+
+}
+
+#second {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 65px;
+  width: 70%;
+}
+
+#comentario {
+  font-family: 'New Rocker', cursive;
+  color: #bb7114;
+}

@@ -1,0 +1,123 @@
+#title {
+  font-size: 50px;
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 30px;
+  color: white;
+}
+.color {
+  padding: 50px;
+  display: inline-block;
+  border: solid white 2px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+body {
+  text-align: center;
+  background-color: black;
+}
+
+#pixel-board {
+  margin-top: 50px;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: solid black 1px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+#clear-board {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-family:'Press Start 2P', cursive;;
+  border: none;
+  height: 30px;
+}
+
+#generate-board {
+  border-radius: 5px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 60px;
+}
+
+#board-size {
+width: 60px;
+text-align: center;
+border-radius: 5px;
+border: none;
+height: 28px;
+}
+
+.title2 {
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-top: 50px;
+}
+
+#yoshi {
+  display: flex;
+  width: 260px;
+  height: 238px;
+  border-radius: 20px;
+  border: solid 2px black;
+  background-image: url( imagens/yoshi.png );
+}
+
+#flower {
+  display: flex;
+  width: 255px;
+  height: 255px;
+  border-radius: 20px;
+  border: solid 2px black;
+  background-image: url( imagens/flor.png );
+}
+
+#groot {
+  display: flex;
+  width: 180px;
+  height: 280px;
+  border-radius: 20px;
+  border: solid 2px black;
+  background-image: url( imagens/groot.png );
+}
+
+#sonic {
+  display: flex;
+  width: 210px;
+  height: 250px;
+  border-radius: 20px;
+  border: solid 2px black;
+  background-image: url( imagens/sonic.png );
+}
+
+.pictures {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  height: 350px;
+}
