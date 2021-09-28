@@ -1,0 +1,588 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 20,
+    "passes": 5,
+    "pending": 0,
+    "failures": 15,
+    "start": "2021-07-30T21:33:28.728Z",
+    "end": "2021-07-30T21:36:38.360Z",
+    "duration": 189632,
+    "testsRegistered": 20,
+    "passPercent": 25,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a7046c03-a552-4231-9b5c-024e7392d976",
+      "title": "",
+      "fullFile": "cypress/integration/header_spec.js",
+      "file": "cypress/integration/header_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "10109440-438f-4da7-8efd-92c51ec9acbf",
+          "title": "9 - Implemente os elementos do header na tela principal de receitas, respeitando os atributos descritos no protótipo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tem os data-testids profile-top-btn, page-title e search-top-btn",
+              "fullTitle": "9 - Implemente os elementos do header na tela principal de receitas, respeitando os atributos descritos no protótipo Tem os data-testids profile-top-btn, page-title e search-top-btn",
+              "timedOut": null,
+              "duration": 12251,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\ncy.get('[data-testid=\"profile-top-btn\"]');\ncy.get('[data-testid=\"page-title\"]');\ncy.get('[data-testid=\"search-top-btn\"]');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "6b5a8a36-cb87-4c7c-b323-82e8306bc140",
+              "parentUUID": "10109440-438f-4da7-8efd-92c51ec9acbf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6b5a8a36-cb87-4c7c-b323-82e8306bc140"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12251,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "93525a68-b2dd-4034-8358-39cee29fde8f",
+          "title": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Não tem header na tela de login",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de login",
+              "timedOut": null,
+              "duration": 434,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\nhasNoHeader();",
+              "err": {},
+              "uuid": "7ccc467f-83b7-4f80-92ca-fc36ffe67e76",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de principal de receitas de comidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de principal de receitas de comidas",
+              "timedOut": null,
+              "duration": 10881,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\nhasHeader('Comidas');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "9c592205-7a5b-436c-b0a0-59346fb6137b",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de principal de receitas de bebidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de principal de receitas de bebidas",
+              "timedOut": null,
+              "duration": 11028,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/bebidas');\nhasHeader('Bebidas');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "ca64d3da-0464-488c-82cc-e2f9daeb82c9",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de detalhes de uma receita de comida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de detalhes de uma receita de comida",
+              "timedOut": null,
+              "duration": 1534,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas/52771');\nhasNoHeader();",
+              "err": {},
+              "uuid": "49c81234-34a8-444a-9685-4a14e32d4558",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de detalhes de uma receita de bebida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de detalhes de uma receita de bebida",
+              "timedOut": null,
+              "duration": 682,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/bebidas/178319');\nhasNoHeader();",
+              "err": {},
+              "uuid": "233afbd3-21ef-464c-96d2-186579d413b4",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de receita em processo de comida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de receita em processo de comida",
+              "timedOut": null,
+              "duration": 413,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas/52771/in-progress');\nhasNoHeader();",
+              "err": {},
+              "uuid": "cf3dc4f3-7295-44b6-939c-17e43f35771d",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de receita em processo de bebida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de receita em processo de bebida",
+              "timedOut": null,
+              "duration": 466,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/bebidas/178319/in-progress');\nhasNoHeader();",
+              "err": {},
+              "uuid": "ff64b1b9-3bf1-4bd1-9049-98e23848c74a",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar",
+              "timedOut": null,
+              "duration": 10717,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar');\nhasHeader('Explorar', false);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "22bcde57-8432-4ba8-b654-b8118bd697c0",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar comidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar comidas",
+              "timedOut": null,
+              "duration": 10805,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/comidas');\nhasHeader('Explorar Comidas', false);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "c28f65bc-c744-4c06-ad93-b8fa9682e623",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar bebidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar bebidas",
+              "timedOut": null,
+              "duration": 10829,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/bebidas');\nhasHeader('Explorar Bebidas', false);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "d463b31b-ce9e-4fb2-8802-1d85aa38055c",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar comidas por ingrediente",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar comidas por ingrediente",
+              "timedOut": null,
+              "duration": 10433,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/comidas/ingredientes');\nhasHeader('Explorar Ingredientes', false);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "be1664d8-1415-47e3-a035-2f5e03fa5785",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar bebidas por ingrediente",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar bebidas por ingrediente",
+              "timedOut": null,
+              "duration": 11117,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/bebidas/ingredientes');\nhasHeader('Explorar Ingredientes', false);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "cacb2450-951d-44d2-83fe-d9b6f5019522",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar comidas por local de origem",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar comidas por local de origem",
+              "timedOut": null,
+              "duration": 11081,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/comidas/area');\nhasHeader('Explorar Origem');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "f75a8542-a520-4dac-b35c-4b29c968b6df",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de perfil",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de perfil",
+              "timedOut": null,
+              "duration": 10829,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/perfil');\nhasHeader('Perfil', false);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "3827dbdb-0da8-45d8-829e-37fab823a5a1",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de receitas feitas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de receitas feitas",
+              "timedOut": null,
+              "duration": 10710,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/receitas-feitas');\nhasHeader('Receitas Feitas', false);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "02213d47-3737-4af7-ba29-575144c456a8",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de receitas favoritas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de receitas favoritas",
+              "timedOut": null,
+              "duration": 10755,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/receitas-favoritas');\nhasHeader('Receitas Favoritas', false);",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"profile-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "803c0941-bc4e-4afe-aeb9-6e178fcce9a0",
+              "parentUUID": "93525a68-b2dd-4034-8358-39cee29fde8f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7ccc467f-83b7-4f80-92ca-fc36ffe67e76",
+            "49c81234-34a8-444a-9685-4a14e32d4558",
+            "233afbd3-21ef-464c-96d2-186579d413b4",
+            "cf3dc4f3-7295-44b6-939c-17e43f35771d",
+            "ff64b1b9-3bf1-4bd1-9049-98e23848c74a"
+          ],
+          "failures": [
+            "9c592205-7a5b-436c-b0a0-59346fb6137b",
+            "ca64d3da-0464-488c-82cc-e2f9daeb82c9",
+            "22bcde57-8432-4ba8-b654-b8118bd697c0",
+            "c28f65bc-c744-4c06-ad93-b8fa9682e623",
+            "d463b31b-ce9e-4fb2-8802-1d85aa38055c",
+            "be1664d8-1415-47e3-a035-2f5e03fa5785",
+            "cacb2450-951d-44d2-83fe-d9b6f5019522",
+            "f75a8542-a520-4dac-b35c-4b29c968b6df",
+            "3827dbdb-0da8-45d8-829e-37fab823a5a1",
+            "02213d47-3737-4af7-ba29-575144c456a8",
+            "803c0941-bc4e-4afe-aeb9-6e178fcce9a0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 122714,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "989b3d66-1947-46a8-85ba-156df09f722b",
+          "title": "11 - Redirecione a pessoa usuária para a tela de perfil ao clicar no botão de perfil",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A mudança de tela ocorre corretamente",
+              "fullTitle": "11 - Redirecione a pessoa usuária para a tela de perfil ao clicar no botão de perfil A mudança de tela ocorre corretamente",
+              "timedOut": null,
+              "duration": 18284,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\ncy.get('[data-testid=\"page-title\"]').contains('Comidas');\ncy.get('[data-testid=\"profile-top-btn\"]').click();\ncy.get('[data-testid=\"page-title\"]').contains('Perfil');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"page-title\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"page-title\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "14403288-0665-466a-a591-592460b5aaaf",
+              "parentUUID": "989b3d66-1947-46a8-85ba-156df09f722b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "14403288-0665-466a-a591-592460b5aaaf"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 18284,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4c882b6d-633c-453a-931c-4d9bd67b95f0",
+          "title": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ao clicar no botão de busca pela primeira vez a barra de busca aparece",
+              "fullTitle": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la Ao clicar no botão de busca pela primeira vez a barra de busca aparece",
+              "timedOut": null,
+              "duration": 19133,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\ncy.get('[data-testid=\"search-input\"]').should('not.exist');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"search-top-btn\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"search-top-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "6ff436a3-1492-4fac-ada7-876c46435907",
+              "parentUUID": "4c882b6d-633c-453a-931c-4d9bd67b95f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao clicar no botão de busca pela segunda vez a barra de busca desaparece",
+              "fullTitle": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la Ao clicar no botão de busca pela segunda vez a barra de busca desaparece",
+              "timedOut": null,
+              "duration": 14182,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]').should('not.exist');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"search-input\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"search-input\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "3bc57dd9-f00f-4e86-9f57-8cd86db70cf9",
+              "parentUUID": "4c882b6d-633c-453a-931c-4d9bd67b95f0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6ff436a3-1492-4fac-ada7-876c46435907",
+            "3bc57dd9-f00f-4e86-9f57-8cd86db70cf9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 33315,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
